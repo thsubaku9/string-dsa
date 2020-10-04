@@ -1,0 +1,27 @@
+{
+  "name": "string-dsa",
+  "version": "0.1.0",
+  "description": "String Data Structures and Algorithm Library in JavaScript",
+  "main": "src/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thsubaku9/string-dsa.git"
+  },
+  "keywords": [],
+  "author": "Kaustubh J <kaustubhkj@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thsubaku9/string-dsa/issues"
+  },
+  "homepage": "https://github.com/thsubaku9/string-dsa#readme",
+  "dependencies": {
+    "mocha": "^8.1.3"
+  }
+}
