@@ -4,7 +4,7 @@
 ## Installation
 
 ```sh
-$ npm install string_dsa
+$ npm install string-dsa
 ```
 
 ## DSA
@@ -20,7 +20,7 @@ List of supported Data Structures and Algorithms are :
 To utilize in Node.Js:
 
 ```sh
-const stringDSA = require('string_dsa');
+const stringDSA = require('string-dsa');
 ```
 
 ## Development Steps
