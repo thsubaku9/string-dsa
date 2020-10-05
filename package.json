@@ -1,6 +1,6 @@
 {
   "name": "string-dsa",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "String Data Structures and Algorithm Library in JavaScript",
   "main": "src/index.js",
   "files": [
@@ -8,7 +8,10 @@
     "src"
   ],
   "scripts": {
-    "test": "mocha --recursive"
+    "coverage":"nyc mocha --recursive",
+    "dev": "webpack -d",
+    "test": "mocha --recursive",
+    "prod": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,10 @@
     "url": "https://github.com/thsubaku9/string-dsa/issues"
   },
   "homepage": "https://github.com/thsubaku9/string-dsa#readme",
-  "dependencies": {
-    "mocha": "^8.1.3"
+  "devDependencies": {
+    "mocha": "^8.1.3",
+    "nyc": "^15.1.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
