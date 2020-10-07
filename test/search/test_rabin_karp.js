@@ -1,4 +1,3 @@
-/* eslint-env mocha */
 const rabin_karp = require("../../src").rabinKarp
 const assert = require('assert');
 

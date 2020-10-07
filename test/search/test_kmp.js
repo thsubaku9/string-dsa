@@ -1,4 +1,3 @@
-/* eslint-env mocha */
 const kmp = require("../../src").kmp;
 const assert = require('assert');
 
