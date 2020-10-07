@@ -5,7 +5,7 @@
  */
 function isBalanced(searchSpace){
     if(searchSpace.length == 0) return false;
-    
+
     bracketStack = []
     for(let i=0; i<searchSpace.length; i++)
     {
