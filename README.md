@@ -1,4 +1,4 @@
-# string-dsa
+# string-dsa [![Build Status](https://travis-ci.com/thsubaku9/string-dsa.svg?branch=main)](https://travis-ci.com/thsubaku9/string-dsa)
 > String oriented Data Structures and Algorithms library for JavaScript
 
 ## Installation
