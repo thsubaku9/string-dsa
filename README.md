@@ -1,4 +1,4 @@
-# string-dsa
+# string-dsa [![Build Status](https://travis-ci.com/thsubaku9/string-dsa.svg?branch=main)](https://travis-ci.com/thsubaku9/string-dsa)
 > String oriented Data Structures and Algorithms library for JavaScript
 
 ## Installation
@@ -11,6 +11,7 @@ $ npm install string-dsa
 
 List of supported Data Structures and Algorithms are :
 
+- [Bloom Filter](https://github.com/thsubaku9/string-dsa/blob/main/src/BloomFilter.js)
 - [Bracket Balance](https://github.com/thsubaku9/string-dsa/blob/main/src/bracketBalance.js)
 - [Dice Coefficient](https://github.com/thsubaku9/string-dsa/blob/main/src/dice_coeff.js)
 - [Knuth Morris Pratt](https://github.com/thsubaku9/string-dsa/blob/main/src/search/kmp.js)
@@ -37,7 +38,7 @@ $ npm install
 Testing:
 
 ```sh
-$ npm run test
+$ npm test
 ```
 
 Coverage:
