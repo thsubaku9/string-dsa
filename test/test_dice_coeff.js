@@ -10,7 +10,7 @@ describe('Dice Coefficient', () => {
 
   it('should return 1 for the same string', () => {
     const result = diceCoeff(stringOne, stringOne, n);
-    assert.strictEqual(result,1);
+    assert.strictEqual(result,1);    
   });
 
   it('should return -1 if either of the strings is empty', () => {        

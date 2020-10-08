@@ -1,10 +1,13 @@
-const kmp = require('./search').kmp
-const rabinKarp = require('./search').rabinKarp
-const diceCoeff = require('./dice_coeff')
-const bracketBalance = require('./bracketBalance')
+const bracketBalance = require('./bracketBalance');
+const BloomFilter = require('./BloomFilter');
+const diceCoeff = require('./dice_coeff');
+const kmp = require('./search').kmp;
+const rabinKarp = require('./search').rabinKarp;
+
 
 module.exports = {
-  bracketBalance,
+  BloomFilter,
+  bracketBalance,  
   diceCoeff,
   kmp,  
   rabinKarp
