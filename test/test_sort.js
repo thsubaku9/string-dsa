@@ -1,7 +1,7 @@
 const sort = require('../src').customSort;
 const assert = require('assert');
 
-describe("",() => {
+describe("Custom String Sorting",() => {
 
     const unsortedArr = ["its","the","its","the","rick","dance"];
     const reverseComparator = (y,x) =>{
