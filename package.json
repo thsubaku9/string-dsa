@@ -1,6 +1,6 @@
 {
   "name": "string-dsa",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "String Data Structures and Algorithm Library in JavaScript",
   "main": "src/index.js",
   "files": [
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/thsubaku9/string-dsa.git"
   },
-  "keywords": ["String Algorithms","String Data Structures"],
+  "keywords": ["String Algorithms","String Data Structures","Bloom Filter","Custom Sort"],
   "author": "Kaustubh J <kaustubhkj@gmail.com>",
   "license": "ISC",
   "bugs": {

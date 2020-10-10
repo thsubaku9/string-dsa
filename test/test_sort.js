@@ -1,4 +1,4 @@
-const sort = require('../src').sort;
+const sort = require('../src').customSort;
 const assert = require('assert');
 
 describe("",() => {
