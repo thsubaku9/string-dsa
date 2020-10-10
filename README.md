@@ -16,7 +16,7 @@ List of supported Data Structures and Algorithms are :
 - [Dice Coefficient](https://github.com/thsubaku9/string-dsa/blob/main/src/dice_coeff.js)
 - [Knuth Morris Pratt](https://github.com/thsubaku9/string-dsa/blob/main/src/search/kmp.js)
 - [Rabin Karp](https://github.com/thsubaku9/string-dsa/blob/main/src/search/rabin_karp.js)
-
+- [Custom Sort](ttps://github.com/thsubaku9/string-dsa/blob/main/src/search/stringSort.js)
 ## Utilization
 
 To utilize in Node.Js:
