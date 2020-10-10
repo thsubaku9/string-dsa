@@ -13,10 +13,10 @@ List of supported Data Structures and Algorithms are :
 
 - [Bloom Filter](https://github.com/thsubaku9/string-dsa/blob/main/src/BloomFilter.js)
 - [Bracket Balance](https://github.com/thsubaku9/string-dsa/blob/main/src/bracketBalance.js)
+- [Custom Sort](ttps://github.com/thsubaku9/string-dsa/blob/main/src/search/stringSort.js)
 - [Dice Coefficient](https://github.com/thsubaku9/string-dsa/blob/main/src/dice_coeff.js)
 - [Knuth Morris Pratt](https://github.com/thsubaku9/string-dsa/blob/main/src/search/kmp.js)
 - [Rabin Karp](https://github.com/thsubaku9/string-dsa/blob/main/src/search/rabin_karp.js)
-- [Custom Sort](ttps://github.com/thsubaku9/string-dsa/blob/main/src/search/stringSort.js)
 ## Utilization
 
 To utilize in Node.Js:
