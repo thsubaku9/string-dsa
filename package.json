@@ -1,6 +1,6 @@
 {
   "name": "string-dsa",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "String Data Structures and Algorithm Library in JavaScript",
   "main": "src/index.js",
   "files": [
