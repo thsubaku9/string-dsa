@@ -99,7 +99,7 @@ class BF{
         let fpr = 1;
         for( internal_iter= 0; internal_iter<this._splitSize; internal_iter++)  non_collision_splits *= non_collision;
         for( internal_iter= 0; internal_iter<this._insertionCount; internal_iter++)  non_collision_all *= non_collision_splits;
-        for( internal_iter= 0; internal_iter<this._splitSize; internal_iter++) fpr*=non_collision_all;
+        for( internal_iter= 0; internal_iter<this._splitSize; internal_iter++) fpr*= 1 - non_collision_all;
 
         return fpr;
     }
