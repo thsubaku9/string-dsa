@@ -12,7 +12,7 @@
 function sort(stringArray, byIndex = false, compartorFn = null){
     if(stringArray.length <1) return [];
     
-    internalComp = compartorFn === null ? (x,y) => {
+    const internalComp = compartorFn === null ? (x,y) => {
         let i=0;
         while(i<x.length && i<y.length){
             if (x.charCodeAt(i) != y.charCodeAt(i)){
@@ -76,4 +76,36 @@ function internalSort(indexArray,stringArray,internalComp){
     }
 }
 
-module.exports = sort;
+/**
+ * 
+ * @param {object[]} array an Array of Objects
+ * @param {Function} compartorFn comparator function
+ * 
+ * @returns {boolean}
+ */
+function sorted(array, compartorFn = null){
+    if (array.length <2 ) return true;
+
+    const internalComp = compartorFn === null ? (x,y) => {
+        let i=0;
+        while(i<x.length && i<y.length){
+            if (x.charCodeAt(i) != y.charCodeAt(i)){
+                return (x.charCodeAt(i) - y.charCodeAt(i));
+            } else {
+                i++;
+            }
+        }
+        return (x.length - y.length);
+    } : compartorFn;
+
+    for(let x=0; x<array.length-1; x++ )
+    {
+        if( internalComp(array[x],array[x+1]) >0) return false; 
+    }
+    return true;
+}
+
+module.exports = {
+    sort: sort,
+    sorted: sorted
+};

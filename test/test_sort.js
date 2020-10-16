@@ -1,4 +1,5 @@
-const sort = require('../src').customSort;
+const sort = require('../src').customSort.sort;
+const sorted = require('../src').customSort.sorted;
 const assert = require('assert');
 
 describe("Custom String Sorting",() => {
@@ -35,4 +36,14 @@ describe("Custom String Sorting",() => {
         const res = sort([],false);
         assert.deepStrictEqual(res,[]);
     })
+
+    it(`should return false for unsorted array`, () =>{
+        const res = sorted(unsortedArr);
+        assert.deepStrictEqual(res,false);
+    });
+
+    it(`should return true for sorted array`, () =>{
+        const res = sorted(sort(unsortedArr,false));
+        assert.deepStrictEqual(res,true);
+    });
 });
