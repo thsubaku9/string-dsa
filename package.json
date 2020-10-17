@@ -1,6 +1,6 @@
 {
   "name": "string-dsa",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "String Data Structures and Algorithm Library in JavaScript",
   "main": "src/index.js",
   "files": [
@@ -8,16 +8,22 @@
     "src"
   ],
   "scripts": {
-    "coverage":"nyc mocha --recursive",
+    "coverage": "nyc mocha --recursive",    
     "dev": "webpack -d",
     "test": "mocha --recursive",
+    "test:coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "prod": "webpack -p"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thsubaku9/string-dsa.git"
   },
-  "keywords": ["String Algorithms","String Data Structures","Bloom Filter","Custom Sort"],
+  "keywords": [
+    "String Algorithms",
+    "String Data Structures",
+    "Bloom Filter",
+    "Custom Sort"
+  ],
   "author": "Kaustubh J <kaustubhkj@gmail.com>",
   "license": "ISC",
   "bugs": {
@@ -25,7 +31,10 @@
   },
   "homepage": "https://github.com/thsubaku9/string-dsa#readme",
   "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "coveralls": "^3.1.0",
     "mocha": "^8.1.3",
+    "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^15.1.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"

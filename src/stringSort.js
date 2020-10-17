@@ -70,7 +70,7 @@ function internalSort(indexArray,stringArray,internalComp){
             grandMerge.push(sortedRight[0]);
             sortedRight = sortedRight.slice(1);
         }        
-        delete leftAr; delete rightAr;
+        //delete leftAr; delete rightAr;
 
         return grandMerge;
     }
