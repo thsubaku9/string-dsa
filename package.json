@@ -1,6 +1,6 @@
 {
   "name": "string-dsa",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "String Data Structures and Algorithm Library in JavaScript",
   "main": "src/index.js",
   "files": [
@@ -22,7 +22,8 @@
     "String Algorithms",
     "String Data Structures",
     "Bloom Filter",
-    "Custom Sort"
+    "Custom Sort",
+    "Levenshtein Distance"
   ],
   "author": "Kaustubh J <kaustubhkj@gmail.com>",
   "license": "ISC",
