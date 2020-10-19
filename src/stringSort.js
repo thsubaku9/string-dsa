@@ -81,7 +81,7 @@ function internalSort(indexArray,stringArray,internalComp){
  * @param {object[]} array an Array of Objects
  * @param {Function} compartorFn comparator function
  * 
- * @returns {boolean}
+ * @returns {boolean} states whether the array is sorted or not
  */
 function sorted(array, compartorFn = null){
     if (array.length <2 ) return true;
