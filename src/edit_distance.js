@@ -24,10 +24,12 @@ function editDistance(string1, string2) {
     }
 
     for(let i = 1; i<string1.length + 1; i++){        
-        for(let j = 1; j<string2.length + 1; j++){
-            let isNotMatch = 1;
-            if(string1.charAt(i - 1)  === string2.charAt(j - 1)) isNotMatch = 0;
-            editDistanceMatrix[i][j] = min( min(editDistanceMatrix[i-1][j-1]  + isNotMatch, editDistanceMatrix[i][j-1] + 1), min(editDistanceMatrix[i][j-1] + 1,editDistanceMatrix[i-1][j]) + 1) ;
+        for(let j = 1; j<string2.length + 1; j++){            
+            if(string1.charAt(i - 1)  === string2.charAt(j - 1)) {
+                editDistanceMatrix[i][j] = editDistanceMatrix[i-1][j-1]
+            } else {
+                editDistanceMatrix[i][j] = min( min(editDistanceMatrix[i-1][j-1] , editDistanceMatrix[i][j-1] ), min(editDistanceMatrix[i][j-1] ,editDistanceMatrix[i-1][j]) ) +1 ;
+            }            
         }
     }
 
