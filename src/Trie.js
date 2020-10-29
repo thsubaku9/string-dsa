@@ -51,7 +51,8 @@ class Trie{
     _hasChildren(currentNode){
         let thisNodeChildren = 0;
         for (let x in currentNode){
-            if(x != undefined && x !="$") thisNodeChildren +=1;
+            if (x == "$") thisNodeChildren += currentNode[x];
+            else if(currentNode[x] != undefined) thisNodeChildren +=1;
             
         }
         return thisNodeChildren;
@@ -61,15 +62,13 @@ class Trie{
         //recursively dive deep; at reaching depth check if any more elements branch out from this node, if they do return false, else delete the node and return true. recursive step out            
         if(currentIter<searchTerm.length){
             if( currentNode[searchTerm[currentIter]] != undefined){
-                let canRemove = this._removeSingle(searchTerm,currentNode[searchTerm[currentIter]],currentIter +1)
-                console.log(`${currentIter}-> canRemove: ${canRemove} and string value: ${searchTerm[currentIter]}`);
-                if(canRemove){
-                    currentNode[searchTerm[currentIter]] = undefined;
+                let canRemove = this._removeSingle(searchTerm,currentNode[searchTerm[currentIter]],currentIter +1)                
+                if(canRemove){                    
+                    currentNode[searchTerm[currentIter]] = undefined;                    
                     return this._hasChildren(currentNode) == 0;
                 }                
             }                         
-        } else if(currentIter == searchTerm.length) {
-            console.log("END")
+        } else if(currentIter == searchTerm.length) {            
             currentNode["$"] = false            
             if( this._hasChildren(currentNode) == 0) {
                 return true;
@@ -88,10 +87,20 @@ class Trie{
         }
     }
 
+    /**
+     * 
+     * @param {String} searchSpace the text to be searched over
+     * 
+     * @returns {Object[]} where each index gives a start position and end position of the term
+     */
     find(searchSpace){
         //iterate over all elements and match according to the trie created
+        for(let i=0;i<searchSpace.length;i++){
+
+        }
     }
 
+    
     /**
      *  @returns {Array} returns the Array of all inserted elements
      */     
