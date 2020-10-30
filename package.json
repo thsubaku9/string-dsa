@@ -1,14 +1,14 @@
 {
   "name": "string-dsa",
-  "version": "0.3.1",
-  "description": "String Data Structures and Algorithm Library in JavaScript",
+  "version": "1.0.0",
+  "description": "String Data Structures and Algorithms Library in JavaScript",
   "main": "src/index.js",
   "files": [
     "dist",
     "src"
   ],
   "scripts": {
-    "coverage": "nyc mocha --recursive",    
+    "coverage": "nyc mocha --recursive",
     "dev": "webpack -d",
     "test": "mocha --recursive",
     "test:coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
@@ -23,7 +23,8 @@
     "String Data Structures",
     "Bloom Filter",
     "Custom Sort",
-    "Levenshtein Distance"
+    "Levenshtein Distance",
+    "Trie"
   ],
   "author": "Kaustubh J <kaustubhkj@gmail.com>",
   "license": "ISC",

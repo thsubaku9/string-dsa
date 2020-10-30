@@ -5,6 +5,7 @@ const diceCoeff = require('./dice_coeff');
 const editDist = require('./edit_distance');
 const kmp = require('./search').kmp;
 const rabinKarp = require('./search').rabinKarp;
+const Trie = require('./Trie');
 
 
 module.exports = {
@@ -14,5 +15,6 @@ module.exports = {
   diceCoeff,
   editDist,
   kmp,  
-  rabinKarp
+  rabinKarp,
+  Trie
 };
