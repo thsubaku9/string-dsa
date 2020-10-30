@@ -1,4 +1,4 @@
-# string-dsa [![Build Status](https://travis-ci.com/thsubaku9/string-dsa.svg?branch=main)](https://travis-ci.com/thsubaku9/string-dsa) [![Coverage Status](https://coveralls.io/repos/github/thsubaku9/string-dsa/badge.svg?branch=main)](https://coveralls.io/github/thsubaku9/string-dsa?branch=main) ![npm](https://img.shields.io/npm/dt/string-dsa?color=cyan&label=Downloads) ![npm](https://img.shields.io/badge/Niche-Yep%20!-ff69b4)
+# string-dsa [![Build Status](https://travis-ci.com/thsubaku9/string-dsa.svg?branch=main)](https://travis-ci.com/thsubaku9/string-dsa) [![Coverage Status](https://coveralls.io/repos/github/thsubaku9/string-dsa/badge.svg?branch=main)](https://coveralls.io/github/thsubaku9/string-dsa?branch=main) ![npm](https://img.shields.io/npm/dt/string-dsa?color=fddb3a) ![npm](https://img.shields.io/badge/Niche-Yep%20!-ff69b4)
 > String oriented Data Structures and Algorithms library for JavaScript
 
 ## Installation
@@ -27,10 +27,10 @@ To utilize in Node.Js:
 const stringDSA = require('string-dsa');
 ```
 
-To utilize in Frontend:
+To utilize in Vanilla Js:
 
 ```sh
-#follow cloning steps
+# follow cloning steps
 $ npm run prod
 $ cp ./dist/string-dsa.js /YOUR/DIRECTORY/FILENAME.js
 ```

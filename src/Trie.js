@@ -91,16 +91,33 @@ class Trie{
      * 
      * @param {String} searchSpace the text to be searched over
      * 
-     * @returns {Object[]} where each index gives a start position and end position of the term
+     * @returns {Array[]} where each index gives a start position and end position of the term
      */
     find(searchSpace){
         //iterate over all elements and match according to the trie created
+        let returnArray = [];
         for(let i=0;i<searchSpace.length;i++){
+            let currentNode = this._rootNode
+            for(let j=i;j<searchSpace.length;j++){                
+                if( currentNode[searchSpace[j]] != undefined ){
+                    currentNode = currentNode[searchSpace[j]]
+                } else {
+                    break;
+                }
 
+                if(currentNode["$"] == true){
+                    let position = []
+                    position.push(i)
+                    position.push(j)
+                    returnArray.push(position)
+                }
+            }            
         }
+
+        return returnArray
     }
 
-    
+
     /**
      *  @returns {Array} returns the Array of all inserted elements
      */     
