@@ -119,7 +119,7 @@ class Trie{
 
 
     /**
-     *  @returns {Array} returns the Array of all inserted elements
+     *  @returns {String[]} returns the array of all inserted elements
      */     
     listAllElements(){
         let elementList = []
@@ -132,7 +132,7 @@ class Trie{
             elementList.push(stringSeq);
         }
         for (let x in node){
-            if(x != "$") this._listFromNode(node[x],elementList,stringSeq + x);                             
+            if(x != "$" && (node[x] != undefined)) this._listFromNode(node[x],elementList,stringSeq + x);                             
         }                        
     }
 }
