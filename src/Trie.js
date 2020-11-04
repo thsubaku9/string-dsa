@@ -135,6 +135,39 @@ class Trie{
             if(x != "$" && (node[x] != undefined)) this._listFromNode(node[x],elementList,stringSeq + x);                             
         }                        
     }
+
+    /**
+     * 
+     * @param {String} searchTerm 
+     * 
+     * @return  {Boolean} States whether the given search term exists or not
+     */
+    contains(searchTerm){
+        let currentNode = this._rootNode;
+        for(let k=0; k<searchTerm.length; k++){
+            if(currentNode[searchTerm[k]] == undefined){
+                return false;
+            } else {
+                currentNode = currentNode[searchTerm[k]];
+            }
+        }
+        return currentNode["$"] == true
+    }
+
+    /**
+     * 
+     * @param {String[]} searchList List of all strings to be seached for existence
+     * 
+     * @returns {Boolean[]} States whether the given search terms exist or not
+     */
+    containsList(searchList){
+        let res = []
+        for (let i=0; i<searchList.length; i++){
+            res.push(this.contains(searchList[i]));
+        }
+        return res;
+    }
 }
 
 module.exports = Trie;
+
