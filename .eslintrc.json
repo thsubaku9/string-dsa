@@ -13,9 +13,20 @@
     },
     "rules": {
         "camelcase": ["off"],
+        "class-methods-use-this": ["error"],
+        "comma-dangle": ["error"],        
         "eqeqeq": ["off"],
         "linebreak-style": ["error", "windows"],
         "max-len": ["warn"],
-        "no-plusplus":["off"]
+        "no-array-constructor": ["warn"],
+        "no-bitwise": ["off"],
+        "no-console": ["error"],    // eslint-disable-line no-console if you wish to deliberately use console
+        "no-continue": ["off"],
+        "no-param-reassign": ["off"],
+        "no-plusplus": ["off"],
+        "no-restricted-syntax": ["warn"],
+        "no-shadow": ["off"],
+        "no-underscore-dangle": ["off"]
+
     }
 }
