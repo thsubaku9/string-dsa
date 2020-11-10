@@ -17,6 +17,7 @@ List of supported Data Structures and Algorithms are :
 - [Dice Coefficient](https://github.com/thsubaku9/string-dsa/blob/main/src/dice_coeff.js)
 - [Edit/Levenshtein Distance](https://github.com/thsubaku9/string-dsa/blob/main/src/edit_distance.js)
 - [Knuth Morris Pratt](https://github.com/thsubaku9/string-dsa/blob/main/src/search/kmp.js)
+- [Longest Common Substring](https://github.com/thsubaku9/string-dsa/blob/main/src/lcs.js)
 - [Rabin Karp](https://github.com/thsubaku9/string-dsa/blob/main/src/search/rabin_karp.js)
 - [Trie](https://github.com/thsubaku9/string-dsa/blob/main/src/Trie.js)
 ## Utilization
