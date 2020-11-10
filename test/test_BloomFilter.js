@@ -3,7 +3,7 @@ const BloomFilter = require('../src').BloomFilter;
 
 describe("Bloom Filter", () => {
 
-    const myBloomFilter = new BloomFilter(100,5);
+    const myBloomFilter = new BloomFilter(100,25);
     const t1="Genshin Impact", t2="Dead Cells", t3="Katana Zero", t4="Paladins";
 
     it("Insert a few values",() =>{        
@@ -22,4 +22,9 @@ describe("Bloom Filter", () => {
         assert.strictEqual(myBloomFilter.exists(t3),0);
         assert.strictEqual(myBloomFilter.exists(t4),0);
     });
+
+    it("Should have a low FPR rate (less that 10% clash)",() =>{
+        assert.notStrictEqual(myBloomFilter.FalsePositiveRate > 0.1,true)
+    });
+    
 });
