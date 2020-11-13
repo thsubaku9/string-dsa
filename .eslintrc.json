@@ -16,7 +16,7 @@
         "class-methods-use-this": ["warn"],
         "comma-dangle": ["error"],        
         "eqeqeq": ["off"],
-        "linebreak-style": ["warn", "linux"],
+        "linebreak-style": ["off"],
         "max-len": ["warn"],
         "no-array-constructor": ["warn"],
         "no-bitwise": ["off"],
