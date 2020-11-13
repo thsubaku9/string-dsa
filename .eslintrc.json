@@ -13,7 +13,7 @@
     },
     "rules": {
         "camelcase": ["off"],
-        "class-methods-use-this": ["error"],
+        "class-methods-use-this": ["warn"],
         "comma-dangle": ["error"],        
         "eqeqeq": ["off"],
         "linebreak-style": ["error", "windows"],
@@ -22,11 +22,14 @@
         "no-bitwise": ["off"],
         "no-console": ["error"],    // eslint-disable-line no-console if you wish to deliberately use console
         "no-continue": ["off"],
+        "no-new-object": ["off"],
         "no-param-reassign": ["off"],
         "no-plusplus": ["off"],
         "no-restricted-syntax": ["warn"],
         "no-shadow": ["off"],
-        "no-underscore-dangle": ["off"]
+        "no-underscore-dangle": ["off"],
+        "quotes" :["off"],
+        "strict": ["off"]
 
     }
 }

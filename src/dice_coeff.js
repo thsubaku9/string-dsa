@@ -54,7 +54,6 @@ function computeDice(st1, st2, n) {
   const score = (2 * sharedValueCount) / (st1ValueCount + st2ValueCount);
 
   return score;
-  // score = 2*sharedValueCount/ (st1ValueCount + st2ValueCount)
 }
 
 module.exports = computeDice;

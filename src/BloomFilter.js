@@ -1,3 +1,5 @@
+"use strict";
+
 /** Class implementation of Bloom Filter */
 class BF {
   /**
