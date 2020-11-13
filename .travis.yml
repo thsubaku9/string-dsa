@@ -3,13 +3,13 @@ sudo: false
 language: node_js
 
 node_js:
-  - 10.5
+  - 10.15.0
 
 install:
   - npm install
 
 script:
-  #- npm run lint
+  - npm run lint
   - npm test
   - npm run prod
   - npm run test:coveralls

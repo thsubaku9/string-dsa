@@ -3,11 +3,10 @@ const BloomFilter = require('./BloomFilter');
 const customSort = require('./stringSort');
 const diceCoeff = require('./dice_coeff');
 const editDist = require('./edit_distance');
-const kmp = require('./search').kmp;
-const lcs = require('./lcs')
-const rabinKarp = require('./search').rabinKarp;
+const { kmp } = require('./search');
+const lcs = require('./lcs');
+const { rabinKarp } = require('./search');
 const Trie = require('./Trie');
-
 
 module.exports = {
   BloomFilter,
@@ -18,5 +17,5 @@ module.exports = {
   kmp,
   lcs,
   rabinKarp,
-  Trie
+  Trie,
 };
