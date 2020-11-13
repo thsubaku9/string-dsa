@@ -30,6 +30,5 @@
         "no-underscore-dangle": ["off"],
         "quotes" :["off"],
         "strict": ["off"]
-
     }
 }
