@@ -28,6 +28,7 @@
         "no-restricted-syntax": ["warn"],
         "no-shadow": ["off"],
         "no-underscore-dangle": ["off"],
+        "prefer-const": ["off"],
         "quotes" :["off"],
         "strict": ["off"]
     }
