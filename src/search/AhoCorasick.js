@@ -46,7 +46,8 @@ class AC {
     }
 
     while (buffer.length) {
-      let currentState = buffer.pop();
+      let currentState = buffer[0];
+      buffer = buffer.slice(1);
 
       for (let x of this.stateTransitions.get(currentState).keys()) {
         if (x == undefined) continue;
