@@ -83,7 +83,7 @@ class Suffixer {
 
     for(let i=1; i<this.originalString.length; i++){
         let cur = this.order[i], prev = this.order[i-1]
-        let cyclicShiftPositionCur = (cur - L + this.originalString.length) % (this.originalString.length) ,cyclicShiftPositionPrev = (prev - L + this.originalString.length) % (this.originalString.length)
+        let cyclicShiftPositionCur = (cur + L) % (this.originalString.length) ,cyclicShiftPositionPrev = (prev + L ) % (this.originalString.length)
 
         if(this.class[cur] != this.class[prev] || this.class[cyclicShiftPositionCur] != this.class[cyclicShiftPositionPrev]){
             newClass[cur] = newClass[prev] + 1
