@@ -28,7 +28,7 @@ function editDistance(string1, string2) {
       if (string1.charAt(i - 1) === string2.charAt(j - 1)) {
         editDistanceMatrix[i][j] = editDistanceMatrix[i - 1][j - 1];
       } else {
-        editDistanceMatrix[i][j] = min(min(editDistanceMatrix[i - 1][j - 1], editDistanceMatrix[i][j - 1]), min(editDistanceMatrix[i][j - 1], editDistanceMatrix[i - 1][j])) + 1;
+        editDistanceMatrix[i][j] = min(editDistanceMatrix[i - 1][j - 1], min(editDistanceMatrix[i][j - 1], editDistanceMatrix[i - 1][j])) + 1;
       }
     }
   }

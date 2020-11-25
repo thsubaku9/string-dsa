@@ -164,6 +164,44 @@ class Trie {
     }
     return res;
   }
+
+  /**
+   * @returns {String[]} returns the ordered value of keys using BurstSort
+   */
+  burstSort() {
+    const arr = [];
+    this._burstSortInternal(this._rootNode, arr, "");
+    return arr;
+  }
+
+  _burstSortInternal(node, arr, collectorString) {
+    let c;
+    if (node.$ === true) arr.push(collectorString);
+
+    // Numerics
+    for (let i = 0; i < 10; i++) {
+      c = String(0 + i);
+      if (node[c] !== undefined) {
+        this._burstSortInternal(node[c], arr, collectorString + c);
+      }
+    }
+
+    // Upper Case
+    for (let i = 0; i < 26; i++) {
+      c = String.fromCharCode(i + "A".charCodeAt(0));
+      if (node[c] !== undefined) {
+        this._burstSortInternal(node[c], arr, collectorString + c);
+      }
+    }
+
+    // Lower Case
+    for (let i = 0; i < 26; i++) {
+      c = String.fromCharCode(i + "a".charCodeAt(0));
+      if (node[c] !== undefined) {
+        this._burstSortInternal(node[c], arr, collectorString + c);
+      }
+    }
+  }
 }
 
 module.exports = Trie;

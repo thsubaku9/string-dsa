@@ -36,7 +36,7 @@ function lcs(string1, string2) {
       if (string1[i1 - 1] == string2[i2 - 1]) {
         matchMatrix[i1][i2] = matchMatrix[i1 - 1][i2 - 1] + 1;
       } else {
-        matchMatrix[i1][i2] = max(max(matchMatrix[i1 - 1][i2 - 1], matchMatrix[i1 - 1][i2]), max(matchMatrix[i1 - 1][i2 - 1], matchMatrix[i1][i2 - 1]));
+        matchMatrix[i1][i2] = max(max(matchMatrix[i1][i2 - 1], matchMatrix[i1 - 1][i2]), matchMatrix[i1 - 1][i2 - 1]);
       }
     }
   }
