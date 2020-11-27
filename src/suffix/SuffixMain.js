@@ -1,17 +1,18 @@
 "use strict";
 
-// const Suffix = require("./src/suffix").Suffixer
+// const Suffix = require("./src/suffix").SuffixOps
 // mySfx = new Suffix("marijuana")
-
-class Suffixer {
+// mySfx.computeLcpArray()
+class SuffixMain {
   constructor(mainString) {
     this.CHAR_LIM = 27;
     this.originalString = `${mainString.toLowerCase()}$`;
 
     this.order = new Array(this.originalString.length);
     this.class = new Array(this.originalString.length);
-    this.lcpArray = new Array(this.originalString.length);
+    this.lcpArray = new Array(this.originalString.length - 1);
     this.suffixConstructed = false;
+    this.lcpConstructed = false;
   }
 
   charOrder() {
@@ -111,15 +112,64 @@ class Suffixer {
     return this.order;
   }
 
-  /*
-    lcpArray(){
-        if(!this.suffixConstructed) this.suffixArray()
+  reverseIndexSA(){
+    let iSA = new Array(this.order.length)
 
-        for (let i=0; i< this.originalString.length; i++) this.lcpArray[i] = 0
-
-        // Do LCP stuff
+    for(let i=0; i<iSA.length; i++){
+      iSA[this.order[i]] = i
     }
-    */
+
+    return iSA
+  }
+
+  _computeLcp(i,j,lcp){
+    let currentLcp= lcp > 0 ? lcp : 0    
+        
+    while ((i + currentLcp <this.originalString.length) && ( j + lcp <this.originalString.length)) {
+      console.log(this.originalString.charAt(i + currentLcp) + "-"+ this.originalString.charAt(j + currentLcp))
+      if(this.originalString.charAt(i + currentLcp) == this.originalString.charAt(j + currentLcp)){
+        currentLcp += 1
+      } else {
+        break
+      }
+    }
+
+    return currentLcp
+  }
+
+  computeLcpArray(){
+    if (this.lcpConstructed) return this.lcpArray
+
+    if(!this.suffixConstructed) this.suffixArray()
+    for (let i=0; i< this.originalString.length-1; i++) this.lcpArray[i] = 0  
+    
+    let isa = this.reverseIndexSA();
+    let s_len = this.originalString.length;
+    let lcp = 0;    
+    let suffix = this.order[0];
+    //compute the lcp for the initial location
+    for(let i=0; i< s_len; i++){      
+      let pos = isa[suffix]            
+      if(pos == s_len -1){
+        console.log(`Suffix : ${suffix} | Position: ${pos}`)
+        lcp = 0
+        suffix = (suffix + 1) % s_len
+        continue;
+      }
+      let nextSuffix = this.order[pos + 1]
+
+      console.log(`Suffix : ${suffix} | Position: ${pos} | nextSuffix : ${nextSuffix}`)
+
+      lcp = this._computeLcp(suffix,nextSuffix,lcp-1)
+      this.lcpArray[pos] = lcp
+      suffix = (suffix + 1) % s_len            
+
+    }
+
+    this.lcpConstructed = true
+    return this.lcpArray
+  }
+  
 }
 
-module.exports = Suffixer;
+module.exports = SuffixMain;
