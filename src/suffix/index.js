@@ -1,5 +1,5 @@
-const SuffixOps = require("./SuffixMain");
+const Suffix = require("./SuffixMain");
 
 module.exports = {
-  SuffixOps,
+  Suffix,
 };
