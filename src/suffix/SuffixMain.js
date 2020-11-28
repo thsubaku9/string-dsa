@@ -95,7 +95,6 @@ class SuffixMain {
       count[cl] -= 1;
       newOrder[count[cl]] = cyclicShiftPosition;
     }
-
     return newOrder;
   }
 
@@ -130,6 +129,7 @@ class SuffixMain {
    *
    * @returns {Array} indexed based suffix array
    */
+
   suffixArray() {
     if (this.suffixConstructed) return this.order;
 
