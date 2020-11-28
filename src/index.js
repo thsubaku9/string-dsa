@@ -5,6 +5,7 @@ const diceCoeff = require('./dice_coeff');
 const editDist = require('./edit_distance');
 const { AhoCorasick, kmp, rabinKarp } = require('./search');
 const lcs = require('./lcs');
+const { Suffix } = require('./suffix');
 const Trie = require('./Trie');
 
 module.exports = {
@@ -17,5 +18,6 @@ module.exports = {
   kmp,
   lcs,
   rabinKarp,
+  Suffix,
   Trie,
 };
