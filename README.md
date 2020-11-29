@@ -14,6 +14,7 @@ List of supported Data Structures and Algorithms are :
 - [Aho Corasick](https://github.com/thsubaku9/string-dsa/blob/main/src/search/AhoCorasick.js)
 - [Bloom Filter](https://github.com/thsubaku9/string-dsa/blob/main/src/BloomFilter.js)
 - [Bracket Balance](https://github.com/thsubaku9/string-dsa/blob/main/src/bracketBalance.js)
+- [Burrows Wheeler Transform](https://github.com/thsubaku9/string-dsa/blob/main/src/suffix/BWT.js)
 - [Burst Sort](https://github.com/thsubaku9/string-dsa/blob/main/src/sort/burstSort.js)
 - [Custom Sort](https://github.com/thsubaku9/string-dsa/blob/main/src/sort/stringSort.js)
 - [Dice Coefficient](https://github.com/thsubaku9/string-dsa/blob/main/src/dice_coeff.js)
@@ -68,4 +69,4 @@ $ npm run coverage
 
 ## License
 
-[ISC](https://github.com/thsubaku9/string-dsa/blob/main/LICENSE)
+[GNU General Public License v3.0](https://github.com/thsubaku9/string-dsa/blob/main/LICENSE)

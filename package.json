@@ -1,6 +1,6 @@
 {
   "name": "string-dsa",
-  "version": "1.5.1",
+  "version": "2.0.0",
   "description": "String Data Structures and Algorithms Library in JavaScript",
   "main": "src/index.js",
   "files": [
@@ -23,6 +23,7 @@
     "String Data Structures",
     "Aho Corasick",
     "Bloom Filter",
+    "Burrows Wheeler Transform",
     "Custom Sort",
     "Levenshtein Distance",
     "Suffix Array",
