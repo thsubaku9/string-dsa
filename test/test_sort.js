@@ -1,10 +1,9 @@
 const assert = require('assert');
-const { sort } = require('../src').customSort;
-const { sorted } = require('../src').customSort;
-
+const { burstSort, customSort, sorted } = require('../src');
 
 describe("Custom String Sorting", () => {
   const unsortedArr = ["its", "the", "its", "the", "rick", "dance"];
+  const burstUnsortedArr = ["can", "batman", "animate", "hippies"];
   const reverseComparator = (y, x) => {
     let i = 0;
     while (i < x.length && i < y.length) {
@@ -17,22 +16,22 @@ describe("Custom String Sorting", () => {
   };
 
   it(`should return correct indices for the array ${unsortedArr}`, () => {
-    const res = sort(unsortedArr, true);
+    const res = customSort(unsortedArr, true);
     assert.deepStrictEqual(res, [5, 0, 2, 4, 1, 3]);
   });
 
   it(`should return correct sorted order for the array ${unsortedArr}`, () => {
-    const res = sort(unsortedArr, false);
+    const res = customSort(unsortedArr, false);
     assert.deepStrictEqual(res, ['dance', 'its', 'its', 'rick', 'the', 'the']);
   });
 
   it(`should return correct descending sort for the array ${unsortedArr}`, () => {
-    const res = sort(unsortedArr, false, reverseComparator);
+    const res = customSort(unsortedArr, false, reverseComparator);
     assert.deepStrictEqual(res, ['the', 'the', 'rick', 'its', 'its', 'dance']);
   });
 
   it(`should return [] for empty array`, () => {
-    const res = sort([], false);
+    const res = customSort([], false);
     assert.deepStrictEqual(res, []);
   });
 
@@ -42,7 +41,14 @@ describe("Custom String Sorting", () => {
   });
 
   it(`should return true for sorted array`, () => {
-    const res = sorted(sort(unsortedArr, false));
+    const res = sorted(customSort(unsortedArr, false));
     assert.deepStrictEqual(res, true);
   });
+
+  it("should perform burstsort properly",() =>{
+    const res = burstSort(burstUnsortedArr);
+    const res2 = customSort(burstUnsortedArr,false);
+    assert.deepStrictEqual(res,res2);
+  }); 
+
 });
