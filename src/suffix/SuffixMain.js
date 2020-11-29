@@ -125,7 +125,7 @@ class SuffixMain {
   }
 
   /**
-   * This function computes the suffixArray of the given string in linear time
+   * This function computes the suffixArray of the given string
    *
    * @returns {Array} indexed based suffix array
    */

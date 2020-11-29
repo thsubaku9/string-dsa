@@ -5,7 +5,7 @@ const editDist = require('./edit_distance');
 const lcs = require('./lcs');
 const { AhoCorasick, kmp, rabinKarp } = require('./search');
 const { burstSort, customSort, sorted } = require('./sort');
-const { Suffix } = require('./suffix');
+const { BWT, Suffix } = require('./suffix');
 const Trie = require('./Trie');
 
 module.exports = {
@@ -13,6 +13,7 @@ module.exports = {
   BloomFilter,
   bracketBalance,
   burstSort,
+  BWT,
   customSort,
   diceCoeff,
   editDist,
