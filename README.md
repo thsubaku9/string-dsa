@@ -24,6 +24,7 @@ List of supported Data Structures and Algorithms are :
 - [Longest Common SubSequence](https://github.com/thsubaku9/string-dsa/blob/main/src/lcs.js)
 - [Rabin Karp](https://github.com/thsubaku9/string-dsa/blob/main/src/search/rabin_karp.js)
 - [Suffix Array](https://github.com/thsubaku9/string-dsa/blob/main/src/suffix/SuffixMain.js)
+- [Suffix Tree](https://github.com/thsubaku9/string-dsa/blob/main/src/suffix/SuffixMain.js)
 - [Trie](https://github.com/thsubaku9/string-dsa/blob/main/src/Trie.js)
 ## Utilization
 
@@ -33,16 +34,16 @@ To utilize in Node.Js:
 const stringDSA = require('string-dsa');
 ```
 
-To utilize in Vanilla Js:
+To utilize in standard Js:
 
 ```sh
-# follow cloning steps
-$ npm run prod
-$ cp ./dist/string-dsa.js /YOUR/DIRECTORY/FILENAME.js
+#clone repo
+npm run prod
+cp ./dist/string-dsa.js /YOUR/DIR/FILE.js
 ```
 
 ```html
-<script src="/YOUR/DIRECTORY/FILENAME.js"></script>
+<script src="/YOUR/DIR/FILE.js"></script>
 ```
 ## Development Steps
 

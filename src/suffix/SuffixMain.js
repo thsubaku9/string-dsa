@@ -110,10 +110,10 @@ class SuffixMain {
     newClass[this.order[0]] = 0;
 
     for (let i = 1; i < this.originalString.length; i++) {
-      let cur = this.order[i]; let
-        prev = this.order[i - 1];
-      let cyclicShiftPositionCur = (cur + L) % (this.originalString.length); let
-        cyclicShiftPositionPrev = (prev + L) % (this.originalString.length);
+      let cur = this.order[i];
+      let prev = this.order[i - 1];
+      let cyclicShiftPositionCur = (cur + L) % (this.originalString.length);
+      let cyclicShiftPositionPrev = (prev + L) % (this.originalString.length);
 
       if (this.class[cur] != this.class[prev] || this.class[cyclicShiftPositionCur] != this.class[cyclicShiftPositionPrev]) {
         newClass[cur] = newClass[prev] + 1;
