@@ -16,6 +16,7 @@ List of supported Data Structures and Algorithms are :
 - [Bracket Balance](https://github.com/thsubaku9/string-dsa/blob/main/src/bracketBalance.js)
 - [Burrows Wheeler Transform](https://github.com/thsubaku9/string-dsa/blob/main/src/suffix/BWT.js)
 - [Burst Sort](https://github.com/thsubaku9/string-dsa/blob/main/src/sort/burstSort.js)
+- [Compact Trie](https://github.com/thsubaku9/string-dsa/blob/main/src/Ctrie.js)
 - [Custom Sort](https://github.com/thsubaku9/string-dsa/blob/main/src/sort/stringSort.js)
 - [Dice Coefficient](https://github.com/thsubaku9/string-dsa/blob/main/src/dice_coeff.js)
 - [Edit/Levenshtein Distance](https://github.com/thsubaku9/string-dsa/blob/main/src/edit_distance.js)

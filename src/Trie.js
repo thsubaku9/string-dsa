@@ -105,10 +105,7 @@ class Trie {
         }
 
         if (currentNode.$ == true) {
-          const position = [];
-          position.push(i);
-          position.push(j);
-          returnArray.push(position);
+          returnArray.push([i, j]);
         }
       }
     }
@@ -186,16 +183,12 @@ class Trie {
       }
     }
 
-    // Upper Case
+    // Upper Case and its lower case
     for (let i = 0; i < 26; i++) {
       c = String.fromCharCode(i + "A".charCodeAt(0));
       if (node[c] !== undefined) {
         this._burstSortInternal(node[c], arr, collectorString + c);
       }
-    }
-
-    // Lower Case
-    for (let i = 0; i < 26; i++) {
       c = String.fromCharCode(i + "a".charCodeAt(0));
       if (node[c] !== undefined) {
         this._burstSortInternal(node[c], arr, collectorString + c);

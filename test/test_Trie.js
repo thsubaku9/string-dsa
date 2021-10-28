@@ -10,7 +10,7 @@ describe("Trie based tests", () => {
   const searchSpace = "can the real candy ban?";
   const resultPos = [[0, 2], [13, 15], [13, 17], [19, 21]];
   const existResult = [true, true, true, false];
-  const orderedKeys = [st3,st1,st2];
+  const orderedKeys = [st3, st1, st2];
 
   it("should insert a bunch of keys", () => {
     myT.insertList([st1, st2, st3]);
