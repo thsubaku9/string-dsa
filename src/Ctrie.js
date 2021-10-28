@@ -126,7 +126,7 @@ class Ctrie {
 
         cNode = cNode.nextNode.get(edgeString[0]);
         j += k;
-        if (cNode?.$) returnArray.push([i, j - 1]);
+        if (cNode != undefined && cNode.$) returnArray.push([i, j - 1]);
       }
     }
     return returnArray;
