@@ -105,7 +105,7 @@ class Trie {
         }
 
         if (currentNode.$ == true) {
-          returnArray.push([i,j]);
+          returnArray.push([i, j]);
         }
       }
     }

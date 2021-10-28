@@ -30,6 +30,7 @@
         "no-underscore-dangle": ["off"],
         "prefer-const": ["off"],
         "quotes" :["off"],
+        "max-classes-per-file": ["off"],
         "strict": ["off"]
     }
 }

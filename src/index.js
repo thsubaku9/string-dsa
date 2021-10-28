@@ -7,6 +7,7 @@ const { AhoCorasick, kmp, rabinKarp } = require('./search');
 const { burstSort, customSort, sorted } = require('./sort');
 const { BWT, Suffix } = require('./suffix');
 const Trie = require('./Trie');
+const Ctrie = require('./Ctrie');
 
 module.exports = {
   AhoCorasick,
@@ -15,6 +16,7 @@ module.exports = {
   burstSort,
   BWT,
   customSort,
+  Ctrie,
   diceCoeff,
   editDist,
   kmp,
